@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&family=Montserrat:wght@600&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+
+:root {
+    --dark: #350363;
+    --background: #ffe9db;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: "Montserrat", sans-serif;
+}
+
+body { 
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #032163;
+    padding: 2rem;
+}
+
+main {
+    width: 90vw;
+    max-width: 800px;
+    text-align: center;
+    background-color: var(--background);
+    border: solid var(--dark);
+    border-width: 0.8rem;
+    border-radius: 1rem;
+    padding: 4rem 2rem;
+    color: #1f2933;
+    margin: auto;
+}
+
+.button {
+    min-width: 28rem;
+    background-image: linear-gradient(92.88deg, #455eb5 9.16%, #5643cc 43.89%, #673fd7 64.72%);
+    border-radius: 2rem;
+    border-style: none;
+    color: white;
+    cursor: pointer;
+    padding: 2.5rem 6rem;
+    font-size: 2rem;
+    text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
+    transition: all 0.5s;
+    font-family: "Josefin Sans", sans-serif;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.button:hover {
+    background-color: #28034b; 
+    transition-duration: 0.1s;
+}
+
+button:last-child {
+    background-color: var(--dark);
+    margin-bottom: 0;
+}
+
+#gameArea {
+    height: 45vh;
+    /* display: flex; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#newgameButton button {
+    margin: 2rem 0;
+}
+
+h2 {
+    font-size: 3rem;
+    margin: 2rem;
+}
+
+h3 {
+    font-size: 3rem;
+}
+
+p {
+    font-size: 1.8rem;
+}
+
+.image {
+    width: 60%;
+    max-height: 22rem;
+    height: auto;
+    margin: 1rem 0 4rem 0;
+}
+
+input {
+    border: 0.1rem solid lightgrey;
+    background: transparent;
+    margin: 4rem 0;
+    width: 25rem;
+    text-align: center;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    font-size: 1.6rem;
+}
+
+.stats {
+    text-align: left;
+    margin-bottom: 4rem;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+.info span {
+    font-size: 2rem;
+    color: red;
+    /* margin: 23px; */
+}
+
+@media (max-width: 1200px) {
+    input {
+        width: 100%; /* Full width on smaller screens */
+        max-width: none;
+    }
+}
